@@ -79,7 +79,7 @@ export default function Footer() {
             <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem', lineHeight: '1.8' }}>
               📍 Avenue Kaboul, Tiknia 93030, Tétouan, Maroc<br />
               📞 <a href="tel:+212779403213" style={{ color: 'var(--text-primary)', textDecoration: 'none' }}>{t('contact.phone.val')}</a><br />
-              ✉️ <span style={{ color: 'var(--text-secondary)' }}>contact@sparelaxistanbul.ma</span>
+              ✉️ <span style={{ color: 'var(--text-secondary)' }}>najoua.bakkali12@gmail.com</span>
             </p>
             <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem', justifyContent: isRtl ? 'flex-end' : 'flex-start', flexDirection: isRtl ? 'row-reverse' : 'row' }}>
               <a href="https://wa.me/212779403213" target="_blank" rel="noopener noreferrer" 
