@@ -1,5 +1,6 @@
 'use client';
 
+import { FaInstagram, FaFacebookF, FaTwitter, FaWhatsapp, FaTiktok, FaPinterest } from 'react-icons/fa';
 import Link from 'next/link';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -79,8 +80,61 @@ export default function Footer() {
             <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem', lineHeight: '1.8' }}>
               📍 Avenue Kaboul, Tiknia 93030, Tétouan, Maroc<br />
               📞 <a href="tel:+212779403213" style={{ color: 'var(--text-primary)', textDecoration: 'none' }}>{t('contact.phone.val')}</a><br />
-              ✉️ <span style={{ color: 'var(--text-secondary)' }}>najoua.bakkali12@gmail.com</span>
+               ✉️ <a href="mailto:najoua.bakkali12@gmail.com" style={{ color: 'var(--gold)', textDecoration: 'none' }}>najoua.bakkali12@gmail.com</a>
             </p>
+
+            {/* Social Icons */}
+            <div style={{ display: 'flex', gap: '0.75rem', marginTop: '1.25rem', justifyContent: isRtl ? 'flex-end' : 'flex-start', flexDirection: isRtl ? 'row-reverse' : 'row' }}>
+              {[
+                { icon: <FaInstagram />, href: 'https://www.instagram.com/najoua.bakkali12/reels/', color: '#E4405F' },
+                { icon: <FaFacebookF />, href: 'https://www.facebook.com/profile.php?id=61590603366722', color: '#1877F2' },
+                { icon: <FaTwitter />, href: 'https://twitter.com/spa_relax', color: '#A0A0A0' },
+                { icon: <FaPinterest />, href: 'https://www.pinterest.com/najouabakkali120105/', color: '#BD081C' },
+                { icon: <FaTiktok />, href: 'https://www.tiktok.com/@massage_hommes_tetouan', color: '#ff0050' },
+                { icon: <FaWhatsapp />, href: 'https://wa.me/212779403213', color: '#25D366' },
+              ].map((social, i) => (
+                <a
+                  key={i}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon"
+                  style={{
+                    width: '38px',
+                    height: '38px',
+                    borderRadius: '50%',
+                    background: 'var(--bg-surface)',
+                    border: '1px solid var(--border-subtle)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    color: social.color,
+                    fontSize: '1rem',
+                    textDecoration: 'none',
+                    transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                  }}
+                  onMouseEnter={(e) => {
+                    const el = e.currentTarget;
+                    el.style.background = social.color;
+                    el.style.color = '#fff';
+                    el.style.borderColor = social.color;
+                    el.style.transform = 'translateY(-4px)';
+                    el.style.boxShadow = `0 6px 20px ${social.color}66`;
+                  }}
+                  onMouseLeave={(e) => {
+                    const el = e.currentTarget;
+                    el.style.background = 'var(--bg-surface)';
+                    el.style.color = social.color;
+                    el.style.borderColor = 'var(--border-subtle)';
+                    el.style.transform = 'translateY(0)';
+                    el.style.boxShadow = 'none';
+                  }}
+                  aria-label={social.href}
+                >
+                  {social.icon}
+                </a>
+              ))}
+            </div>
             <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem', justifyContent: isRtl ? 'flex-end' : 'flex-start', flexDirection: isRtl ? 'row-reverse' : 'row' }}>
               <a href="https://wa.me/212779403213" target="_blank" rel="noopener noreferrer" 
                 className="btn btn-whatsapp" style={{ padding: '0.6rem 1.2rem', fontSize: '0.75rem', borderRadius: '4px' }}>

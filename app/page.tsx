@@ -9,6 +9,7 @@ import Gallery from '../components/Gallery';
 import Testimonials from '../components/Testimonials';
 import Location from '../components/Location';
 import Footer from '../components/Footer';
+import ScrollToTop from '../components/ScrollToTop';
 import FloatingWhatsApp from '../components/FloatingWhatsApp';
 import WhatsAppChatbot from '../components/WhatsAppChatbot';
 import { useLanguage } from '../context/LanguageContext';
@@ -148,6 +149,9 @@ export default function Home() {
 
       {/* Luxury Brand Footer */}
       <Footer />
+
+      {/* Scroll to top button */}
+      <ScrollToTop />
 
       {/* Floating high-converting widgets */}
       <FloatingWhatsApp />

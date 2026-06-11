@@ -140,8 +140,8 @@ p { font-size: 1rem; line-height: 1.75; color: var(--text-secondary); }
 
 /* ===== ANIMATIONS ===== */
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(30px) translateX(var(--translate-x, 0)); }
+  to { opacity: 1; transform: translateY(0) translateX(var(--translate-x, 0)); }
 }
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -163,10 +163,24 @@ p { font-size: 1rem; line-height: 1.75; color: var(--text-secondary); }
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+@keyframes socialBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+@keyframes scrollTopPulse {
+  0%, 100% { box-shadow: 0 4px 20px rgba(197, 160, 89, 0.5); }
+  50% { box-shadow: 0 6px 28px rgba(197, 160, 89, 0.75); }
+}
 
 .animate-fade-in-up { animation: fadeInUp 0.8s ease forwards; }
 .animate-fade-in { animation: fadeIn 0.6s ease forwards; }
 .animate-float { animation: float 4s ease-in-out infinite; }
+.social-icon:hover {
+  animation: socialBounce 0.5s ease;
+}
+.scroll-to-top-btn {
+  animation: fadeInUp 0.4s ease forwards, scrollTopPulse 2s ease-in-out infinite;
+}
 .delay-100 { animation-delay: 0.1s; }
 .delay-200 { animation-delay: 0.2s; }
 .delay-300 { animation-delay: 0.3s; }
