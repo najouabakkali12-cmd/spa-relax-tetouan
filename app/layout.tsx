@@ -91,7 +91,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
-              '@type': 'LocalBusiness',
+              '@type': 'HealthAndBeautyBusiness',
               '@id': 'https://sparelaxistanbul.ma',
               name: 'SPA RELAX ISTANBUL',
               description:
@@ -119,8 +119,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   closes: '22:00',
                 },
               ],
-              priceRange: '$$',
-              servesCuisine: [],
+              priceRange: '250MAD - 350MAD',
               hasOfferCatalog: {
                 '@type': 'OfferCatalog',
                 name: 'Services de Massage',
