@@ -36,7 +36,7 @@ export default function Hero() {
       </video>
       <div style={{
         position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
-        background: 'linear-gradient(to bottom, rgba(13,13,13,0.7) 0%, rgba(13,13,13,0.92) 80%, #0d0d0d 100%)',
+        background: 'linear-gradient(to bottom, rgba(13,13,13,0.2) 0%, rgba(13,13,13,0.6) 80%, #0d0d0d 100%)',
         zIndex: 2,
       }} />
       
