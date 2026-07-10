@@ -29,12 +29,12 @@ export default function Navbar() {
   };
 
   const prefilledMessages: Record<string, string> = {
-    fr: 'Bonjour, je voudrais réserver un massage chez SPA RELAX ISTANBUL.',
-    ar: 'مرحباً، أود حجز حصة تدليك في SPA RELAX ISTANBUL.',
-    en: 'Hello, I would like to book a massage at SPA RELAX ISTANBUL.',
-    es: 'Hola, me gustaría reservar un masaje en SPA RELAX ISTANBUL.',
-    it: 'Ciao, vorrei prenotare un massaggio presso SPA RELAX ISTANBUL.',
-    tr: 'Merhaba, SPA RELAX ISTANBUL’da bir masaj rezervasyonu yaptırmak istiyorum.',
+    fr: 'Bonjour, je voudrais réserver un massage chez Massage.',
+    ar: 'مرحباً، أود حجز حصة تدليك في Massage.',
+    en: 'Hello, I would like to book a massage at Massage.',
+    es: 'Hola, me gustaría reservar un masaje en Massage.',
+    it: 'Ciao, vorrei prenotare un massaggio presso Massage.',
+    tr: 'Merhaba, Massage’da bir masaj rezervasyonu yaptırmak istiyorum.',
   };
 
   const prefilled = prefilledMessages[language] || prefilledMessages.fr;
