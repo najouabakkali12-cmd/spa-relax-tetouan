@@ -80,7 +80,7 @@ export default function Footer() {
             <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem', lineHeight: '1.8' }}>
               📍 Avenue Kaboul,Tétouan, Maroc<br />
               📞 <a href="tel:+212779403213" style={{ color: 'var(--text-primary)', textDecoration: 'none' }}>{t('contact.phone.val')}</a><br />
-               ✉️ <a href="mailto:najoua.bakkali12@gmail.com" style={{ color: 'var(--gold)', textDecoration: 'none' }}>najoua.bakkali12@gmail.com</a>
+               
             </p>
 
             {/* Social Icons */}
