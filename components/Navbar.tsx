@@ -95,7 +95,7 @@ export default function Navbar() {
                 background: 'linear-gradient(135deg, #d4b47a, #c5a059)',
                 WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
                 letterSpacing: '0.02em',
-              }}>SPA RELAX</span>
+              }}>Massage</span>
               <span style={{
                 fontFamily: 'var(--font-body)', fontSize: '0.55rem',
                 fontWeight: 600, letterSpacing: '0.35em',
