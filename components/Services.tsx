@@ -43,12 +43,12 @@ export default function Services() {
 
   const getWhatsAppLink = (serviceName: string) => {
     const prefilledMessages: Record<string, string> = {
-      fr: `Bonjour, je souhaite réserver le service : ${serviceName} chez SPA RELAX ISTANBUL.`,
-      ar: `مرحباً، أود حجز خدمة: ${serviceName} في SPA RELAX ISTANBUL.`,
-      en: `Hello, I would like to book the service: ${serviceName} at SPA RELAX ISTANBUL.`,
-      es: `Hola, me gustaría reservar el servicio: ${serviceName} en SPA RELAX ISTANBUL.`,
-      it: `Ciao, vorrei prenotare il servizio: ${serviceName} presso SPA RELAX ISTANBUL.`,
-      tr: `Merhaba, SPA RELAX ISTANBUL’da şu hizmet için rezervasyon yaptırmak istiyorum: ${serviceName}.`,
+      fr: `Bonjour, je souhaite réserver le service : ${serviceName} chez  ISTANBUL.`,
+      ar: `مرحباً، أود حجز خدمة: ${serviceName} في  ISTANBUL.`,
+      en: `Hello, I would like to book the service: ${serviceName} at  ISTANBUL.`,
+      es: `Hola, me gustaría reservar el servicio: ${serviceName} en  ISTANBUL.`,
+      it: `Ciao, vorrei prenotare il servizio: ${serviceName} presso  ISTANBUL.`,
+      tr: `Merhaba,  ISTANBUL’da şu hizmet için rezervasyon yaptırmak istiyorum: ${serviceName}.`,
     };
     const msg = prefilledMessages[language] || prefilledMessages.fr;
     return `https://wa.me/212779403213?text=${encodeURIComponent(msg)}`;
