@@ -9,12 +9,12 @@ export default function Location() {
   const isRtl = dir === 'rtl';
 
   const prefilledMessages: Record<string, string> = {
-    fr: 'Bonjour, je souhaite réserver un massage prochainement chez SPA RELAX ISTANBUL.',
-    ar: 'مرحباً، أود حجز حصة تدليك قريباً في SPA RELAX ISTANBUL.',
-    en: 'Hello, I would like to book a massage soon at SPA RELAX ISTANBUL.',
-    es: 'Hola, me gustaría reservar un masaje pronto en SPA RELAX ISTANBUL.',
-    it: 'Ciao, vorrei prenotare un massaggio a breve presso SPA RELAX ISTANBUL.',
-    tr: 'Merhaba, yakın zamanda SPA RELAX ISTANBUL’da bir masaj rezervasyonu yaptırmak istiyorum.',
+    fr: 'Bonjour, je souhaite réserver un massage prochainement chez Massage ISTANBUL.',
+    ar: 'مرحباً، أود حجز حصة تدليك قريباً في Massage ISTANBUL.',
+    en: 'Hello, I would like to book a massage soon at Massage ISTANBUL.',
+    es: 'Hola, me gustaría reservar un masaje pronto en Massage ISTANBUL.',
+    it: 'Ciao, vorrei prenotare un massaggio a breve presso Massage ISTANBUL.',
+    tr: 'Merhaba, yakın zamanda Massage ISTANBUL’da bir masaj rezervasyonu yaptırmak istiyorum.',
   };
 
   const prefilled = prefilledMessages[language] || prefilledMessages.fr;
@@ -45,7 +45,7 @@ export default function Location() {
                 {t('contact.info')}
               </span>
               <h3 style={{ fontSize: '1.8rem', color: 'var(--text-primary)', marginTop: '0.5rem', marginBottom: '2rem', fontWeight: 600 }}>
-                SPA RELAX ISTANBUL
+                Massage ISTANBUL
               </h3>
               
               {/* Address */}
@@ -111,7 +111,7 @@ export default function Location() {
               allowFullScreen={true}
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"
-              title="SPA RELAX ISTANBUL Location Map"
+              title="Massage ISTANBUL Location Map"
             />
           </div>
 
