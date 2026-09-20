@@ -86,6 +86,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#131313" />
+        <meta name="p:domain_verify" content="119302b216bf644d3cbee6db971b4a7f"/>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
