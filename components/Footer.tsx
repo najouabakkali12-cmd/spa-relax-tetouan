@@ -86,7 +86,7 @@ export default function Footer() {
             {/* Social Icons */}
             <div style={{ display: 'flex', gap: '0.75rem', marginTop: '1.25rem', justifyContent: isRtl ? 'flex-end' : 'flex-start', flexDirection: isRtl ? 'row-reverse' : 'row' }}>
               {[
-                { icon: <FaInstagram />, href: 'https://www.instagram.com/najoua.bakkali12/reels/', color: '#E4405F' },
+                { icon: <FaInstagram />, href: 'https://www.instagram.com/massagetetouanspamaroc/', color: '#E4405F' },
                 { icon: <FaFacebookF />, href: 'https://www.facebook.com/profile.php?id=61590603366722', color: '#1877F2' },
                 { icon: <FaTwitter />, href: 'https://twitter.com/spa_relax', color: '#A0A0A0' },
                 { icon: <FaPinterest />, href: 'https://www.pinterest.com/najouabakkali120105/', color: '#BD081C' },
