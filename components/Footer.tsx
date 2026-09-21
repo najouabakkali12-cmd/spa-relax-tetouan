@@ -90,7 +90,7 @@ export default function Footer() {
                 { icon: <FaFacebookF />, href: 'https://www.facebook.com/profile.php?id=61590603366722', color: '#1877F2' },
                 { icon: <FaTwitter />, href: 'https://twitter.com/spa_relax', color: '#A0A0A0' },
                 { icon: <FaPinterest />, href: 'https://www.pinterest.com/najouabakkali120105/', color: '#BD081C' },
-                { icon: <FaTiktok />, href: 'https://www.tiktok.com/@massage_hommes_tetouan', color: '#ff0050' },
+                { icon: <FaTiktok />, href: 'https://www.tiktok.com/@massagetetouanspamaroc', color: '#ff0050' },
                 { icon: <FaWhatsapp />, href: 'https://wa.me/212779403213', color: '#25D366' },
               ].map((social, i) => (
                 <a
