@@ -37,7 +37,7 @@ export default function FloatingWhatsApp() {
   const ariaLabel = ariaLabels[language] || ariaLabels.fr;
   const prefilled = prefilledMessages[language] || prefilledMessages.fr;
 
-  const whatsappUrl = `https://wa.me/212779403213?text=${encodeURIComponent(prefilled)}`;
+  const whatsappUrl = `https://wa.me/212762873414?text=${encodeURIComponent(prefilled)}`;
 
   return (
     <>
