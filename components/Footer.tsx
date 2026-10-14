@@ -79,7 +79,7 @@ export default function Footer() {
             </h4>
             <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem', lineHeight: '1.8' }}>
               📍 Avenue Kaboul,Tétouan, Maroc<br />
-              📞 <a href="tel:+212779403213" style={{ color: 'var(--text-primary)', textDecoration: 'none' }}>{t('contact.phone.val')}</a><br />
+              📞 <a href="tel:+212762873414" style={{ color: 'var(--text-primary)', textDecoration: 'none' }}>{t('contact.phone.val')}</a><br />
                
             </p>
 
@@ -91,7 +91,7 @@ export default function Footer() {
                 { icon: <FaTwitter />, href: 'https://twitter.com/spa_relax', color: '#A0A0A0' },
                 { icon: <FaPinterest />, href: 'https://www.pinterest.com/najouabakkali120105/', color: '#BD081C' },
                 { icon: <FaTiktok />, href: 'https://www.tiktok.com/@massagetetouanspamaroc', color: '#ff0050' },
-                { icon: <FaWhatsapp />, href: 'https://wa.me/212779403213', color: '#25D366' },
+                { icon: <FaWhatsapp />, href: 'https://wa.me/212762873414', color: '#25D366' },
               ].map((social, i) => (
                 <a
                   key={i}
@@ -136,7 +136,7 @@ export default function Footer() {
               ))}
             </div>
             <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem', justifyContent: isRtl ? 'flex-end' : 'flex-start', flexDirection: isRtl ? 'row-reverse' : 'row' }}>
-              <a href="https://wa.me/212779403213" target="_blank" rel="noopener noreferrer" 
+              <a href="https://wa.me/212762873414" target="_blank" rel="noopener noreferrer" 
                 className="btn btn-whatsapp" style={{ padding: '0.6rem 1.2rem', fontSize: '0.75rem', borderRadius: '4px' }}>
                 {t('footer.btn.live')}
               </a>
