@@ -28,7 +28,7 @@ export default function WhatsAppChatbot() {
   const handleOptionClick = (optionText: string) => {
     const prefix = greetings[language] || greetings.fr;
     const encodedText = encodeURIComponent(`${prefix}${optionText}`);
-    window.open(`https://wa.me/212779403213?text=${encodedText}`, '_blank');
+    window.open(`https://wa.me/212762873414?text=${encodedText}`, '_blank');
   };
 
   const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -37,7 +37,7 @@ export default function WhatsAppChatbot() {
     const userMessage = formData.get('message') as string;
     if (userMessage.trim()) {
       const encodedText = encodeURIComponent(userMessage);
-      window.open(`https://wa.me/212779403213?text=${encodedText}`, '_blank');
+      window.open(`https://wa.me/212762873414?text=${encodedText}`, '_blank');
     }
   };
 
